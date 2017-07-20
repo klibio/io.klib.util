@@ -1,7 +1,7 @@
 # Eclipse workspace metadata
 .metadata
 .recommenders/
-
+clientdb.xml
 .gradle/
 
 # ignore eclipse bin folder
