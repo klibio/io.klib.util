@@ -1,0 +1,13 @@
+# Eclipse workspace metadata
+.metadata
+.recommeners
+
+.gradle/
+
+# ignore eclipse bin folder
+*/bin/**
+*/bin_test/**
+*/generated/**
+*/exported/**
+*/coveragereport/**
+.DS_Store
