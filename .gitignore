@@ -11,3 +11,5 @@ clientdb.xml
 */exported/**
 */coveragereport/**
 .DS_Store
+
+*/_downloadDir/*
