@@ -1,0 +1,22 @@
+-runprovidedcapabilities: ${native_capability}
+
+-runfw: org.apache.felix.framework;version='[5.4.0,5.4.0]'
+-runee: JavaSE-1.8
+-resolve.effective: active;skip:="osgi.service"
+
+-runrequires: \
+	osgi.identity;filter:='(&(osgi.identity=org.apache.felix.gogo.shell)(version>=0.12.0))',\
+	osgi.identity;filter:='(&(osgi.identity=org.apache.felix.gogo.command)(version>=0.16.0))',\
+	osgi.identity;filter:='(&(osgi.identity=org.apache.felix.gogo.runtime)(version>=0.16.2))',\
+	osgi.identity;filter:='(&(osgi.identity=net.sourceforge.htmlcleaner)(version>=2.19.0))',\
+	osgi.identity;filter:='(&(osgi.identity=io.klib.util.download.felix)(version>=0.1.0.201707190445))'
+
+-runbundles: \
+	org.apache.felix.gogo.command;version='[0.16.0,0.16.1)',\
+	org.apache.felix.gogo.runtime;version='[0.16.2,0.16.3)',\
+	org.apache.felix.gogo.shell;version='[0.12.0,0.12.1)',\
+	org.apache.servicemix.bundles.jdom;version='[2.0.6,2.0.7)',\
+	io.klib.util.download.felix;version=snapshot,\
+	net.sourceforge.htmlcleaner;version='[2.21.0,2.21.1)',\
+	org.apache.felix.scr;version='[2.0.6,2.0.7)'
+	

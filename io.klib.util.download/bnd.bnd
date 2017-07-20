@@ -1,0 +1,13 @@
+-sub: *.bnd
+-buildpath: \
+	osgi.annotation;version=6.0.1,\
+	osgi.core;version=6.0,\
+	osgi.cmpn;version=6.0,\
+	net.sourceforge.htmlcleaner;version=2.21
+
+-testpath: \
+	${junit}
+
+javac.source: 1.8
+javac.target: 1.8
+
